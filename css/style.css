@@ -80,7 +80,7 @@ aside{
 
 .marquee{
     flex-basis: 29px;
-    padding: 0 calc((100% - 2px - 770px) / 2);
+    padding: 0 calc((100% - 770px - 2px) / 2);
     font-size: 24px;
     color: #0000FF;
 }
