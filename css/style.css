@@ -1,17 +1,16 @@
 *{
-    box-sizing: border-box;
-    font-family: '標楷體';
-    overflow: hidden;
+  box-sizing: border-box;
+  font-family: '標楷體';
+  overflow: hidden;  
 }
 
 .main{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
     width: 1024px;
     padding: 0 12px;
     margin: 10px auto;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    flex-wrap: wrap;
 }
 
 body>*:not(aside, section),
@@ -25,39 +24,40 @@ section>*{
     height: 65px;
 }
 
-aside{
+.aside{
     flex-basis: 215px;
     height: calc(768px - 65px - 20px);
     display: flex;
     flex-direction: column;
 }
 
-.title{
+.menu{
+    flex-basis: calc(100% - 25px);
     font-weight: 500;
+}
+
+.title{
     font-size: 24px;
-    color: #FF00FF;
     text-decoration: underline;
     text-decoration-color: black;
     text-underline-offset: 4px;
-    margin: 15px auto;
-}
-
-.menu{
-    flex-basis: calc(100% - 25px);
+    color: #FF00FF;
+    text-align: center;
+    padding: 15px 0;
 }
 
 .menu>a{
-    display: block;
+    font-size: 16px;
+    color: #000000;
     background-image: url(../images/menu1.png);
     background-repeat: no-repeat;
     width: 200px;
     height: 35px;
     line-height: 35px;
+    display: block;
+    margin: 10px auto;
     text-align: center;
-    margin: 0 auto 5px;
-    font-size: 16px;
     text-decoration: none;
-    color: #000000;
 }
 
 .menu>a:hover{
@@ -67,8 +67,8 @@ aside{
 
 .update{
     flex-basis: 25px;
-    font-size: 16px;
     color: #000000;
+    font-size: 16px;
     text-align: center;
 }
 
@@ -79,10 +79,10 @@ aside{
 }
 
 .marquee{
-    flex-basis: 29px;
-    padding: 0 calc((100% - 770px - 2px) / 2);
     font-size: 24px;
     color: #0000FF;
+    flex-basis: 29px;
+    padding: 0 calc((100% - 2px - 770px) / 2);
 }
 
 .content{
@@ -95,8 +95,9 @@ aside{
 }
 
 .footer{
-    flex-basis: 1000px;
+    width: 1000px;
     height: 20px;
+    font-size: 16px;
     color: #000000;
     text-align: center;
 }
